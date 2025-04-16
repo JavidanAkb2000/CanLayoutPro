@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JanCorp Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+
+     
+        
+
+       @media screen and (max-width: 1024px) {
+          .dashboard {
+              max-width: 95%;
+          }
+
+          .widgets {
+            gap: 15px;
+          }
+
+
+        }
+
+        @media screen and (max-width: 768px) {
+          .navbar {
+            padding-right: 1rem;
+          }
+
+          .logo {
+            width: 150px;
+            padding: 1rem;
+          }
+
+          .links {
+            font-size: 1rem;
+          }
+
+          .links div a {
+        font-size: 1rem;
+        }
+        
+        aside {
+            padding: 10px;
+        }
+        
+        main {
+            padding: 15px;
+        }
+
+        .widget{
+            width: auto;
+        }
+
+
+        }
+
+
+        @media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+    }
+    
+    .dashboard {
+        min-height: 95vh;
+    }
+    
+    .logo {
+        width: 120px;
+        padding: 0.8rem;
+    }
+    
+    header {
+        flex-direction: column;
+    }
+    
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .links {
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    
+    .widget {
+        padding: 1rem;
+    }
+    
+    aside h3 {
+        padding: 8px 0;
+    }
+
+   
+}
+
+    
+    </style>
+</head>
+<body>
+    <section class="dashboard">
+        <header>
+            <div class="logo">
+                JanCorpTM
+            </div>
+            <nav class="navbar">
+                <div class="links">
+                    <div class="home"><a style="text-decoration: none;" href="#">Home</a></div>
+                    <div class="gallery"><a style="text-decoration: none;" href="gallery.html">Gallery</a></div>
+                    <div class="cards"><a style="text-decoration: none;" href="cards.html">Cards</a></div>
+                </div>
+            </nav>
+        </header>
+        <aside>
+            <h3>Dashboard</h3>
+            <h3>Settings</h3>
+            <h3>Profile</h3>
+        </aside>
+        <main>
+            <div class="content">
+                <h1>Dashboard</h1>
+                <div class="Widgets">
+                    <div class="widget">
+                        <h4>Widget 1</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dicta, eligendi animi commodi iste perspiciatis sed.</p>
+                    </div>
+                    <div class="widget">
+                        <h4>Widget 2</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dicta, eligendi animi commodi iste perspiciatis sed.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>© 2025 JanCorp TM</footer>
+    </section>
+</body>
+</html>

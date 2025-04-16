@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+       body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;  /* Optional: adds background color */
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background-color: white;
+        color: black;
+        height: auto;
+        padding: 20px;
+        border-radius: 8px;  /* Optional: adds rounded corners */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Optional: adds subtle shadow */
+    }
+
+        .cards{
+            display: flex;
+            gap: 20px;
+            padding-bottom: 30px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            flex: 1;
+            padding: 10px;
+        }
+
+        .texts {
+            text-align: center;
+        }
+
+        .texts h6 {
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .main {
+                width: 90%;
+            }
+            .cards {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+        }
+
+        @media screen and (max-width: 480px) {
+           .main{
+            width: 95%;
+            padding: 15px;
+           }
+
+           .card {
+            padding: 8px;
+           }
+
+           .texts h1 {
+            font-size: 1.5rem;
+           }
+
+           .texts h6 {
+            font-size: 0.9rem;
+           }
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="texts">
+            <h1>Card Layout Example</h1>
+            <h6>This is a simple card layout using responsive CSS Grid. Resize the browwindow to see the responsiveness in action</h6>
+        </div>
+        <div class="cards">
+            <div class="card">
+                
+                <h2>Card One</h2>
+                <p>This is some content inside the first card</p>
+            </div>
+            <div class="card">
+                
+                <h2>Card Two</h2>
+                <p>This is some content inside the first card</p>
+            </div>
+            <div class="card">
+                
+                <h2>Card Three</h2>
+                <p>This is some content inside the first card</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
